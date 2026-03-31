@@ -1,0 +1,245 @@
+/* =========================
+   THEME VARIABLES
+========================= */
+:root {
+  --bg: #ffffff;
+  --text: #000000;
+  --card-bg: #f5f5f5;
+  --nav-bg: #f5f5f5;
+  --footer-bg: #f5f5f5;
+  --button-bg: #2563eb;
+  --border: rgba(0, 0, 0, 0.1);
+  --muted: #555;
+}
+
+/* DARK MODE */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0d1117;
+    --text: #e6edf3;
+    --card-bg: #161b22;
+    --nav-bg: #161b22;
+    --footer-bg: #161b22;
+    --button-bg: #3b82f6;
+    --border: rgba(255, 255, 255, 0.1);
+    --muted: #8b949e;
+  }
+}
+
+/* =========================
+   GLOBAL
+========================= */
+html {
+  font-size: 18px; /* increased from 16px */
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.7;
+}
+
+/* =========================
+   TYPOGRAPHY
+========================= */
+h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+h3 {
+  font-size: 1.3rem;
+  margin-bottom: 8px;
+}
+
+p {
+  font-size: 1.1rem;
+  max-width: 65ch;
+  margin: 0 auto 12px;
+}
+
+header p {
+  font-size: 1.2rem;
+  color: var(--muted);
+}
+
+.section-subtitle {
+  color: var(--muted);
+  font-size: 1rem;
+  margin-bottom: 25px;
+}
+
+.note {
+  font-size: 0.9rem;
+  color: var(--muted);
+  margin-top: 20px;
+}
+
+.mission {
+  margin-top: 20px;
+  font-weight: bold;
+  color: var(--button-bg);
+  font-size: 1.1rem;
+}
+
+/* =========================
+   NAV
+========================= */
+nav {
+  display: flex;
+  padding: 15px 0;
+  background: var(--nav-bg);
+  justify-content: center;
+  border-bottom: 1px solid var(--border);
+}
+
+nav a {
+  color: var(--text);
+  margin: 0 15px;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+nav a:hover {
+  opacity: 0.7;
+}
+
+/* =========================
+   HERO
+========================= */
+header {
+  text-align: center;
+  padding: 60px 20px; /* reduced spacing */
+}
+
+/* =========================
+   SECTIONS
+========================= */
+section {
+  padding: 50px 20px; /* tighter spacing */
+  text-align: center;
+  max-width: 900px;
+  margin: auto;
+}
+
+/* subtle separation */
+section + section {
+  border-top: 1px solid var(--border);
+}
+
+/* better readability for about */
+#about p {
+  text-align: center;
+}
+
+/* =========================
+   CARDS
+========================= */
+.all-card {
+  display: flex;
+  gap: 25px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: var(--card-bg);
+  padding: 20px;
+  width: 100%;              
+  max-width: 320px;         
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  transition: 0.2s ease;
+  box-sizing: border-box;   
+}
+
+.card p {
+  font-size: 1.05rem;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  border-color: var(--button-bg);
+}
+
+/* =========================
+   CONTACT
+========================= */
+form {
+  display: flex;
+  flex-direction: column;
+  width: 320px;
+  margin: auto;
+}
+
+input,
+textarea,
+select {
+  margin: 10px 0;
+  padding: 12px;
+  border-radius: 5px;
+  border: 1px solid var(--border);
+  background: var(--card-bg);
+  color: var(--text);
+  font-size: 1rem;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+/* =========================
+   BUTTON
+========================= */
+button {
+  background: var(--button-bg);
+  border: none;
+  padding: 12px;
+  cursor: pointer;
+  color: white;
+  border-radius: 5px;
+  transition: 0.2s;
+  font-size: 1rem;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+/* =========================
+   FOOTER
+========================= */
+footer {
+  background: var(--footer-bg);
+  padding: 20px;
+  font-size: 0.9rem;
+  text-align: center;
+  border-top: 1px solid var(--border);
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+@media (max-width: 768px) {
+  html {
+    font-size: 17px;
+  }
+
+  .all-card {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  form {
+    width: 100%;
+    max-width: 320px;
+  }
+}
