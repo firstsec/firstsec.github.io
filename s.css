@@ -129,6 +129,10 @@ section {
   margin: auto;
 }
 
+header + section {
+  border-top: 1px solid var(--border);
+}
+
 /* subtle separation */
 section + section {
   border-top: 1px solid var(--border);
@@ -214,6 +218,99 @@ button:hover {
   opacity: 0.9;
 }
 
+.cta-button {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 24px;
+  text-decoration: none;
+  font-size: 0.95rem;
+  border-radius: 5px;
+
+  background: var(--button-bg);
+  color: #fff;
+  border: 1px solid var(--button-bg);
+
+  transition: all 0.2s ease;
+}
+
+.cta-button:hover {
+  opacity: 0.9;
+}
+
+
+/* =========================
+   BLOG
+========================= */
+.blog-archive {
+  padding: 50px 20px;
+  max-width: 900px;
+  margin: auto;
+  text-align: center;
+}
+
+.blog-archive .section-subtitle {
+  margin-bottom: 40px;
+}
+
+.post-preview {
+  margin: 50px auto;
+  max-width: 700px;
+  text-align: left;
+}
+
+.post-preview h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.post-preview p {
+  color: var(--muted);
+}
+
+/* =========================
+   BLOG POST
+========================= */
+.blog-post {
+  padding: 50px 20px;
+  max-width: 700px;
+  margin: auto;
+}
+
+.blog-post h1 {
+  margin-bottom: 15px;
+}
+
+.blog-post h2 {
+  margin-top: 30px;
+}
+
+.blog-post p {
+  text-align: left;
+}
+
+.meta {
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+
+.back-link {
+  display: inline-block;
+  margin-bottom: 30px;
+  margin-left: 2px;
+}
+
+.back-link:hover {
+  opacity: 0.7;
+}
+
+.blog-post a {
+  color: var(--text);
+  text-decoration: underline;
+}
+
+.blog-post a:hover {
+  opacity: 0.7;
+}
 /* =========================
    FOOTER
 ========================= */

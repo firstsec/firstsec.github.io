@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>What Is Phishing and How to Prevent It | FirstSec</title>
+  <link rel="stylesheet" href="../s.css">
+</head>
+
+<body>
+
+  <div id="header"></div>
+
+  <main class="blog-post">
+
+    <article>
+
+      <!-- Back -->
+      <a href="index.html" class="back-link">← Back</a>
+
+      <!-- Title -->
+      <h1>What Is Phishing and How to Prevent It</h1>
+
+      <!-- Meta -->
+      <p class="meta">12 April 2026</p>
+
+      <!-- Content -->
+      <p>
+        Phishing is one of the most common ways attackers gain access to accounts and systems. 
+        It relies on deception rather than technical complexity, making it especially effective 
+        against small and medium businesses.
+      </p>
+
+      <h2>How phishing works</h2>
+      <p>
+        Phishing attacks usually come in the form of emails or messages that appear legitimate. 
+        These messages often imitate trusted services, colleagues, or business partners.
+      </p>
+
+      <p>
+        The goal is simple: trick the user into clicking a link, downloading a file, or entering 
+        sensitive information such as passwords or financial details.
+      </p>
+
+      <h2>Why small businesses are targeted</h2>
+      <p>
+        Small and medium businesses are frequent targets because they often lack dedicated security 
+        teams and structured awareness training. Attackers know that a single successful attempt 
+        can provide access to emails, internal systems, or customer data.
+      </p>
+
+      <p>
+        In many cases, the attack does not need to be sophisticated. It only needs one person to 
+        trust the message.
+      </p>
+
+      <h2>Common risks</h2>
+      <p>
+        A successful phishing attack can lead to account takeover, data exposure, or financial loss. 
+        In some cases, attackers use compromised accounts to send further phishing emails, spreading 
+        the attack within the organization.
+      </p>
+
+      <h2>How to prevent phishing</h2>
+      <p>
+        The most effective defense is a combination of simple practices:
+      </p>
+
+      <ul>
+        <li>Use multi-factor authentication on important accounts</li>
+        <li>Avoid clicking links from unknown or unexpected emails</li>
+        <li>Verify sensitive requests, especially those involving payments</li>
+        <li>Train employees to recognize suspicious messages</li>
+      </ul>
+
+      <p>
+        These measures are simple but significantly reduce the risk of compromise.
+      </p>
+
+      <p>
+        Understanding how phishing works is the first step toward building stronger security.
+      </p>
+
+      <!-- CTA -->
+      <hr>
+      <p>
+        Need help improving your security? 
+        <a href="../index.html#contact">Get started</a>.
+      </p>
+
+    </article>
+
+  </main>
+
+  <div id="footer"></div>
+
+  <script>
+    fetch("../header.html")
+      .then(res => res.text())
+      .then(data => document.getElementById("header").innerHTML = data);
+
+    fetch("../footer.html")
+      .then(res => res.text())
+      .then(data => document.getElementById("footer").innerHTML = data);
+  </script>
+
+</body>
+
+</html>

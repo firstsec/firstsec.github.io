@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Post Title | FirstSec</title>
+  <link rel="stylesheet" href="../s.css">
+</head>
+
+<body>
+
+  <div id="header"></div>
+
+  <main class="blog-post">
+
+    <article>
+
+      <!-- Back -->
+      <a href="index.html" class="back-link">← Back</a>
+
+      <!-- Title -->
+      <h1>Post Title</h1>
+
+      <!-- Meta -->
+      <p class="meta">12 April 2026</p>
+
+      <!-- Content -->
+      <p>
+        This is the introduction. Keep it simple and direct.
+      </p>
+
+      <h2>Section Title</h2>
+      <p>
+        Explain something clearly and practically.
+      </p>
+
+      <h2>Another Section</h2>
+      <p>
+        Add actionable advice or explanation.
+      </p>
+
+      <p>
+        Final thoughts or conclusion.
+      </p>
+
+      <!-- Optional CTA -->
+      <hr>
+      <p>
+        Need help improving your security? 
+        <a href="../index.html#contact">Get started</a>.
+      </p>
+
+    </article>
+
+  </main>
+
+  <div id="footer"></div>
+
+  <script>
+    fetch("../header.html")
+      .then(res => res.text())
+      .then(data => document.getElementById("header").innerHTML = data);
+
+    fetch("../footer.html")
+      .then(res => res.text())
+      .then(data => document.getElementById("footer").innerHTML = data);
+  </script>
+
+</body>
+
+</html>

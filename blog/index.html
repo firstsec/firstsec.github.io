@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog | FirstSec</title>
+  <link rel="stylesheet" href="../s.css">
+</head>
+
+<body>
+
+  <div id="header"></div>
+
+  <main class="blog-archive">
+
+    <h1>Blog</h1>
+
+    <p class="section-subtitle">
+      Notes on cybersecurity, practical security advice, and common risks.
+    </p>
+
+    <!-- POST 1 -->
+    <article class="post-preview">
+      <h2>
+        <a href="what-is-phishing-and-how-to-prevent-It.html">What Is Phishing and How to Prevent It</a>
+      </h2>
+      <p>
+        A simple explanation of phishing attacks and practical ways to protect your business and users.
+      </p>
+    </article>
+
+  </main>
+
+  <div id="footer"></div>
+
+  <script>
+    fetch("../header.html")
+      .then(res => res.text())
+      .then(data => document.getElementById("header").innerHTML = data);
+
+    fetch("../footer.html")
+      .then(res => res.text())
+      .then(data => document.getElementById("footer").innerHTML = data);
+  </script>
+
+</body>
+
+</html>
