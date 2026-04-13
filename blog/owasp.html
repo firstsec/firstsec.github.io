@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>What is OWASP? | FirstSec</title>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-D3HH5Q3XYY"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-D3HH5Q3XYY');
+  </script>
+  <link rel="stylesheet" href="../s.css">
+</head>
+
+<body>
+
+  <div id="header"></div>
+
+  <main class="blog-post">
+
+    <article>
+
+      <!-- Back -->
+      <a href="index.html" class="back-link">← Back</a>
+
+      <!-- Title -->
+      <h1>What is OWASP?</h1>
+
+      <!-- Content -->
+      <p>
+        OWASP (Open Web Application Security Project) is a global community focused on improving software security. It provides free resources, tools, and best practices to help developers and organizations build secure applications.
+      </p>
+
+      <h2>Why It Matters</h2>
+      <p>
+        OWASP is best known for the OWASP Top 10, a list of the most critical web security risks. It helps teams understand common vulnerabilities like injection attacks, broken authentication, and misconfigurations.
+      </p>
+
+      <h2>How to Use It</h2>
+      <p>
+        Developers and security teams use OWASP guidelines to identify risks, secure code, and improve overall application security during development and testing.
+      </p>
+
+      <p>
+        OWASP is essential for anyone building or managing web applications securely.
+      </p>
+
+      <!-- Optional CTA -->
+      <hr>
+      <p>
+        Need help improving your security? 
+        <a href="../index.html#contact">Get started</a>.
+      </p>
+
+    </article>
+
+  </main>
+
+  <div id="footer"></div>
+
+  <script>
+    fetch("../header.html")
+      .then(res => res.text())
+      .then(data => document.getElementById("header").innerHTML = data);
+
+    fetch("../footer.html")
+      .then(res => res.text())
+      .then(data => document.getElementById("footer").innerHTML = data);
+  </script>
+
+</body>
+
+</html>
