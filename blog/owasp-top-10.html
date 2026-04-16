@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OWASP Top 10 Explained | FirstSec</title>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-D3HH5Q3XYY"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-D3HH5Q3XYY');
+  </script>
+  <link rel="stylesheet" href="../s.css">
+</head>
+
+<body>
+
+  <div id="header"></div>
+
+  <main class="blog-post">
+
+    <article>
+
+      <!-- Back -->
+      <a href="index.html" class="back-link">← Back</a>
+
+      <!-- Title -->
+      <h1>OWASP Top 10: The Most Critical Web Security Risks</h1>
+
+      <!-- Introduction -->
+      <p>
+        The OWASP Top 10 is a widely recognized list of the most critical security risks to web applications.
+        It helps developers, startups, and organizations understand what attackers actually exploit in real-world systems.
+        This guide breaks down each risk with practical examples and clear fixes you can apply immediately.
+      </p>
+
+      <!-- A01 -->
+      <h2 id="A01">A01: Broken Access Control</h2>
+      <p>
+        Broken access control happens when users can access data or perform actions they shouldn’t be allowed to.
+        <br><strong>Example:</strong> Changing a URL from <code>/user/123</code> to <code>/user/124</code> to view another user’s data.
+        <br><strong>Fix:</strong> Enforce authorization checks on the server side and follow the principle of least privilege.
+      </p>
+
+      <!-- A02 -->
+      <h2 id="A02">A02: Cryptographic Failures</h2>
+      <p>
+        This occurs when sensitive data is not properly protected with strong encryption.
+        <br><strong>Example:</strong> Storing passwords in plain text or using outdated hashing algorithms like MD5.
+        <br><strong>Fix:</strong> Use strong encryption (AES, TLS 1.2+) and secure hashing (bcrypt, Argon2).
+      </p>
+
+      <!-- A03 -->
+      <h2 id="A03">A03: Injection</h2>
+      <p>
+        Injection flaws occur when untrusted input is executed as part of a query or command.
+        <br><strong>Example:</strong> SQL Injection in a login form allowing bypass of authentication.
+        <br><strong>Fix:</strong> Use parameterized queries, ORM frameworks, and strict input validation.
+      </p>
+
+      <!-- A04 -->
+      <h2 id="A04">A04: Insecure Design</h2>
+      <p>
+        Insecure design refers to flaws in how the system is built, not just coding mistakes.
+        <br><strong>Example:</strong> No rate limiting on password reset → attackers can spam requests or brute-force tokens.
+        <br><strong>Fix:</strong> Use threat modeling and apply secure design patterns early in development.
+      </p>
+
+      <!-- A05 -->
+      <h2 id="A05">A05: Security Misconfiguration</h2>
+      <p>
+        Security misconfiguration happens when systems are improperly set up.
+        <br><strong>Example:</strong> Leaving an admin panel exposed with default credentials or debug mode enabled in production.
+        <br><strong>Fix:</strong> Harden configurations, disable unnecessary features, and use secure defaults.
+      </p>
+
+      <!-- A06 -->
+      <h2 id="A06">A06: Vulnerable and Outdated Components</h2>
+      <p>
+        Using outdated libraries or frameworks exposes applications to known vulnerabilities.
+        <br><strong>Example:</strong> Running an old version of Log4j with publicly available exploits.
+        <br><strong>Fix:</strong> Regularly update dependencies and use vulnerability scanning tools.
+      </p>
+
+      <!-- A07 -->
+      <h2 id="A07">A07: Identification and Authentication Failures</h2>
+      <p>
+        Weak authentication mechanisms allow attackers to compromise accounts.
+        <br><strong>Example:</strong> No rate limiting on login attempts → brute-force attacks succeed.
+        <br><strong>Fix:</strong> Implement multi-factor authentication (MFA), strong passwords, and secure session handling.
+      </p>
+
+      <!-- A08 -->
+      <h2 id="A08">A08: Software and Data Integrity Failures</h2>
+      <p>
+        This occurs when applications trust code or data without verifying integrity.
+        <br><strong>Example:</strong> Automatically installing updates from an unverified source.
+        <br><strong>Fix:</strong> Use code signing, checksums, and secure CI/CD pipelines.
+      </p>
+
+      <!-- A09 -->
+      <h2 id="A09">A09: Security Logging and Monitoring Failures</h2>
+      <p>
+        Without proper logging, attacks can go unnoticed.
+        <br><strong>Example:</strong> Multiple failed login attempts are not recorded or alerted.
+        <br><strong>Fix:</strong> Implement centralized logging, monitoring, and real-time alerting.
+      </p>
+
+      <!-- A10 -->
+      <h2 id="A10">A10: Server-Side Request Forgery (SSRF)</h2>
+      <p>
+        SSRF allows attackers to make the server send requests to internal or external systems.
+        <br><strong>Example:</strong> Forcing the server to access <code>http://localhost/internal</code>.
+        <br><strong>Fix:</strong> Validate URLs, restrict outbound requests, and use allowlists.
+      </p>
+
+      <!-- Conclusion -->
+      <h2 id="conclusion">Final Thoughts</h2>
+      <p>
+        The OWASP Top 10 is not just a checklist — it reflects how real attackers think and operate.
+        Building secure applications means integrating security into every stage of development,
+        from design to deployment. Start with these fundamentals, and you’ll eliminate a large
+        portion of real-world risk.
+      </p>
+
+      <!-- CTA -->
+      <hr>
+      <p>
+        Need help improving your security? 
+        <a href="../index.html#contact">Get started</a>.
+      </p>
+
+    </article>
+
+  </main>
+
+  <div id="footer"></div>
+
+  <script>
+    fetch("../header.html")
+      .then(res => res.text())
+      .then(data => document.getElementById("header").innerHTML = data);
+
+    fetch("../footer.html")
+      .then(res => res.text())
+      .then(data => document.getElementById("footer").innerHTML = data);
+  </script>
+
+</body>
+
+</html>
