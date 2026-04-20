@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>What is OSINT? | FirstSec</title>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-D3HH5Q3XYY"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-D3HH5Q3XYY');
+  </script>
+  <link rel="stylesheet" href="../s.css">
+</head>
+
+<body>
+
+  <div id="header"></div>
+
+  <main class="blog-post">
+
+    <article>
+
+      <!-- Back -->
+      <a href="index.html" class="back-link">← Back</a>
+
+      <!-- Title -->
+      <h1>What is OSINT?</h1>
+
+      <!-- Content -->
+      <p>
+        Open Source Intelligence (OSINT) is the process of collecting and analyzing information that is publicly available. This includes data from websites, social media, public records, forums, and many other open sources. Unlike hacking, OSINT does not involve breaking into systems — it focuses on using information that is already accessible to anyone.
+      </p>
+
+      <h2>How OSINT Works</h2>
+      <p>
+        OSINT works by gathering small pieces of information from different places and combining them to build a bigger picture. For example, a username found on a forum might be linked to a social media account, which then reveals an email or location. Investigators, journalists, and security professionals use OSINT to uncover patterns, verify identities, and understand behavior.
+      </p>
+
+      <h2>Why OSINT Matters</h2>
+      <p>
+        OSINT is widely used in cybersecurity, law enforcement, business intelligence, and even everyday research. Companies use it to detect threats, monitor competitors, and protect their data. At the same time, attackers can also use OSINT to gather information about targets, making it important for individuals to be aware of what they share online.
+      </p>
+
+      <h2>Practical OSINT Tips</h2>
+      <p>
+        To use OSINT effectively, start by thinking like an investigator. Search usernames across platforms, check metadata in images, and use advanced search operators in search engines. Tools like Google dorks, social media search tools, and public databases can reveal much more than basic searches. Always verify information from multiple sources to avoid mistakes.
+      </p>
+
+      <p>
+        OSINT is a powerful skill that can be used for both defense and analysis. Understanding it helps you not only gather information but also protect your own digital footprint.
+      </p>
+
+      <!-- Optional CTA -->
+      <hr>
+      <p>
+        Need help improving your security? 
+        <a href="../index.html#contact">Get started</a>.
+      </p>
+
+    </article>
+
+  </main>
+
+  <div id="footer"></div>
+
+  <script>
+    fetch("../header.html")
+      .then(res => res.text())
+      .then(data => document.getElementById("header").innerHTML = data);
+
+    fetch("../footer.html")
+      .then(res => res.text())
+      .then(data => document.getElementById("footer").innerHTML = data);
+  </script>
+
+</body>
+
+</html>
