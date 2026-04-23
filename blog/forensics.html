@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>What is Forensics? | FirstSec</title>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-D3HH5Q3XYY"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-D3HH5Q3XYY');
+  </script>
+  <link rel="stylesheet" href="../s.css">
+</head>
+
+<body>
+
+  <div id="header"></div>
+
+  <main class="blog-post">
+
+    <article>
+
+      <!-- Back -->
+      <a href="index.html" class="back-link">← Back</a>
+
+      <!-- Title -->
+      <h1>What is Digital Forensics?</h1>
+
+      <!-- Content -->
+      <p>
+        Digital forensics is the process of identifying, collecting, analyzing, and preserving digital evidence. It plays a critical role in cybersecurity, helping organizations understand what happened during a security incident and how to prevent it in the future.
+      </p>
+
+      <h2>Why Digital Forensics Matters</h2>
+      <p>
+        When a cyberattack occurs, simply stopping it isn’t enough. You need to know how the attacker got in, what they accessed, and whether they’re still inside your systems. Digital forensics provides these answers.
+      </p>
+      <p>
+        It is used in:
+        <ul>
+          <li>Investigating data breaches</li>
+          <li>Tracking insider threats</li>
+          <li>Supporting legal cases with evidence</li>
+          <li>Improving overall security posture</li>
+        </ul>
+      </p>
+
+      <h2>How the Process Works</h2>
+      <p>
+        Digital forensics typically follows a structured process:
+      </p>
+      <ul>
+        <li><strong>Identification:</strong> Detecting that an incident has occurred</li>
+        <li><strong>Preservation:</strong> Securing data without altering it</li>
+        <li><strong>Analysis:</strong> Examining logs, files, and systems for evidence</li>
+        <li><strong>Reporting:</strong> Documenting findings clearly and accurately</li>
+      </ul>
+
+      <h2>Common Tools and Techniques</h2>
+      <p>
+        Forensic experts use specialized tools to recover deleted files, analyze system logs, and trace attacker activity. Techniques include:
+      </p>
+      <ul>
+        <li>Disk and memory analysis</li>
+        <li>Network traffic inspection</li>
+        <li>Log correlation</li>
+        <li>Malware analysis</li>
+      </ul>
+
+      <h2>Practical Advice</h2>
+      <p>
+        If you run a business or manage systems, you don’t need to be a forensic expert—but you should be prepared:
+      </p>
+      <ul>
+        <li>Keep detailed logs and monitor them regularly</li>
+        <li>Have an incident response plan in place</li>
+        <li>Back up your data securely and frequently</li>
+        <li>Limit access to sensitive systems</li>
+      </ul>
+
+      <p>
+        Preparation makes forensic investigations faster, more accurate, and far more effective.
+      </p>
+
+      <h2>Conclusion</h2>
+      <p>
+        Digital forensics is not just about solving cybercrimes—it’s about understanding them. By learning from incidents, organizations can strengthen their defenses and reduce future risks.
+      </p>
+
+      <!-- Optional CTA -->
+      <hr>
+      <p>
+        Need help improving your security? 
+        <a href="../index.html#contact">Get started</a>.
+      </p>
+
+    </article>
+
+  </main>
+
+  <div id="footer"></div>
+
+  <script>
+    fetch("../header.html")
+      .then(res => res.text())
+      .then(data => document.getElementById("header").innerHTML = data);
+
+    fetch("../footer.html")
+      .then(res => res.text())
+      .then(data => document.getElementById("footer").innerHTML = data);
+  </script>
+
+</body>
+
+</html>
