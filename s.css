@@ -61,7 +61,7 @@ h3 {
 
 p {
   font-size: 1.1rem;
-  max-width: 65ch;
+  /* max-width: 65ch; */
   margin: 0 auto 12px;
 }
 
@@ -150,7 +150,6 @@ section + section {
   display: flex;
   gap: 25px;
   justify-content: center;
-  flex-wrap: wrap;
 }
 
 .card {
@@ -174,7 +173,7 @@ section + section {
 }
 
 /* =========================
-   CONTACT
+   contact
 ========================= */
 form {
   display: flex;

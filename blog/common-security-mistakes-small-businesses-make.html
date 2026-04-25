@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post Title | FirstSec</title>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-D3HH5Q3XYY"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-D3HH5Q3XYY');
+    </script>
+    <link rel="stylesheet" href="../s.css">
+</head>
+
+<body>
+
+    <div id="header"></div>
+
+    <main class="blog-post">
+
+        <article>
+
+            <!-- Back -->
+            <a href="index.html" class="back-link">← Back</a>
+
+            <!-- Title -->
+            <h1>Common Security Mistakes Small Businesses Make</h1>
+
+            <!-- Content -->
+            <p>
+                Most small businesses assume they are too small to be targeted. In reality, attackers often prefer
+                smaller targets because they are easier to compromise and usually less protected.
+            </p>
+
+            <p>
+                Security issues are rarely caused by complex attacks. More often, they come from simple mistakes that go
+                unnoticed until it’s too late.
+            </p>
+
+            <h2>1. Weak or Reused Passwords</h2>
+            <p>
+                Using the same password across multiple services is one of the most common risks. If one service is
+                compromised, attackers can reuse those credentials elsewhere.
+            </p>
+
+            <p>
+                Strong, unique passwords combined with a password manager significantly reduce this risk.
+            </p>
+
+            <h2>2. Outdated Software and Plugins</h2>
+            <p>
+                Many attacks exploit known vulnerabilities in outdated systems. Websites, plugins, and servers that are
+                not regularly updated become easy entry points.
+            </p>
+
+            <p>
+                Keeping everything up to date is one of the simplest and most effective security measures.
+            </p>
+
+            <h2>3. No Visibility Into What’s Happening</h2>
+            <p>
+                In many cases, businesses don’t even realize they’ve been compromised. Without logs, monitoring, or
+                basic checks, attacks can go unnoticed for long periods.
+            </p>
+
+            <p>
+                Basic visibility into your systems can help detect suspicious activity early.
+            </p>
+
+            <h2>4. Overlooking Human Factors</h2>
+            <p>
+                Not all attacks are technical. Phishing emails, social engineering, and simple mistakes by users are
+                still among the most successful attack methods.
+            </p>
+
+            <p>
+                Training and awareness can prevent a large percentage of these incidents.
+            </p>
+
+            <h2>5. Assuming “It Won’t Happen to Us”</h2>
+            <p>
+                This mindset is one of the biggest risks. Security is often ignored until something goes wrong, and by
+                then the cost is much higher.
+            </p>
+
+            <p>
+                Proactive assessment is always more effective than reactive fixes.
+            </p>
+
+            <h2>Final Thoughts</h2>
+            <p>
+                Security doesn’t have to be complex. In most cases, understanding the basics and identifying weak points
+                early can prevent serious problems.
+            </p>
+
+            <p>
+                Small improvements can make a significant difference in reducing risk.
+            </p>
+
+            <!-- Optional CTA -->
+            <hr>
+            <p>
+                Not sure if your business is exposed?
+                <a href="../index.html#check-your-security">Request a security assessment</a>.
+            </p>
+
+        </article>
+
+    </main>
+
+    <div id="footer"></div>
+
+    <script>
+        fetch("../header.html")
+            .then(res => res.text())
+            .then(data => document.getElementById("header").innerHTML = data);
+
+        fetch("../footer.html")
+            .then(res => res.text())
+            .then(data => document.getElementById("footer").innerHTML = data);
+    </script>
+
+</body>
+
+</html>

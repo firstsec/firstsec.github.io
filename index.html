@@ -8,7 +8,7 @@
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-D3HH5Q3XYY"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
+    function gtag() { dataLayer.push(arguments); }
     gtag('js', new Date());
 
     gtag('config', 'G-D3HH5Q3XYY');
@@ -22,9 +22,14 @@
 
   <!-- HERO -->
   <header>
-    <h1>Cybersecurity for Small & Medium Businesses</h1>
-    <p>Penetration testing, security consulting, and practical awareness to keep your business protected.</p>
-    <a href="#contact" class="cta-button">Get Started</a>
+    <h1>Find out how your business could be hacked — before it happens.</h1>
+    <p>Authorized penetration testing and security assessments for small and medium businesses.</p>
+    <a href="#check-your-security" class="cta-button">Check Your Security</a>
+
+    <p class="note">
+      Most small businesses are exposed without knowing it.
+    </p>
+
   </header>
 
   <!-- SERVICES -->
@@ -32,35 +37,78 @@
     <h2>Services</h2>
 
     <p class="section-subtitle">
-      Covering multiple areas of security testing, risk assessment, and awareness.
+      Focused on real-world attack scenarios, risk exposure, and human factors.
     </p>
 
     <div class="all-card">
       <div class="card">
         <h3>Penetration Testing</h3>
         <p>
-          Security testing across systems and environments to identify exploitable vulnerabilities.
+          Simulated real-world attacks to show how an attacker could actually compromise your systems.
+        </p>
+        <p class="note">
+          Independent assessment. No remediation included.
         </p>
       </div>
 
       <div class="card">
-        <h3>Business Consulting</h3>
+        <h3>Security Consulting</h3>
         <p>
-          Risk assessment and security guidance to improve protection and reduce exposure.
+          Advisory on improving your overall security posture, including processes, access control, and risk management.
         </p>
       </div>
 
       <div class="card">
-        <h3>Security Awareness</h3>
+        <h3>Security Awareness Training</h3>
         <p>
-          Training for individuals, teams, and families to recognize and avoid common threats.
+          Practical training for individuals, teams, and families to recognize phishing, scams, and common attacks.
         </p>
       </div>
     </div>
-
     <p class="note">
-      All testing is performed ethically, with proper authorization and defined scope.
+      All engagements are confidential and performed under strict authorization.
     </p>
+  </section>
+
+  <!-- PROCESS -->
+  <section id="process">
+    <h2>How it works</h2>
+
+    <p class="section-subtitle">
+      Clear process. No surprises.
+    </p>
+
+    <div class="all-card">
+
+      <div class="card">
+        <h3>1. Define Scope</h3>
+        <p>
+          We define what will be tested, goals, and authorization.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>2. Security Testing</h3>
+        <p>
+          Controlled testing simulating real-world attack scenarios.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>3. Report</h3>
+        <p>
+          Clear report with vulnerabilities, risks, and impact.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>4. Next Steps</h3>
+        <p>
+          Guidance on how to improve your security posture.
+        </p>
+      </div>
+
+    </div>
   </section>
 
   <!-- ABOUT -->
@@ -68,29 +116,28 @@
     <h2>About</h2>
 
     <p>
-      Focused on identifying vulnerabilities and understanding how systems can be compromised in real-world
-      environments.
+      Work performed with strict confidentiality and authorization.
     </p>
 
     <p>
-      Providing penetration testing and security consulting to help small and medium businesses reduce risk and improve
-      their overall security posture.
+      With over 20 years of experience in Linux systems and real-world web environments,
+      FirstSec focuses on identifying how systems can be compromised in practice — not just in theory.
     </p>
 
     <p>
-      Security awareness is also offered for teams, individuals, and families to help recognize and avoid everyday
-      threats.
-    </p>
-
-    <p class="mission">
-      Identify vulnerabilities. Understand risks. Improve security.
+      Experience includes working with production systems, handling security incidents,
+      and understanding modern attack techniques used against small and medium businesses.
     </p>
 
   </section>
 
   <!-- CONTACT -->
-  <section id="contact">
-    <h2>Contact</h2>
+  <section id="check-your-security">
+    <h2>Check Your Security</h2>
+    <p>
+      Not sure if your business is at risk?
+      Send a message and describe your setup — you’ll get a clear response on possible vulnerabilities.
+    </p>
 
     <form action="https://formspree.io/f/xqegawqq" method="POST">
       <input type="text" name="name" placeholder="Name" required>
@@ -100,7 +147,7 @@
         <option value="" disabled selected>Service</option>
         <option value="general">General Inquiry</option>
         <option value="penetration-testing">Penetration Testing</option>
-        <option value="business-consulting">Business Consulting</option>
+        <option value="security-consulting">Security Consulting</option>
         <option value="security-awareness">Security Awareness</option>
       </select>
 
@@ -110,7 +157,7 @@
   </section>
 
   <div id="footer"></div>
-  
+
   <script>
     fetch("/header.html")
       .then(res => res.text())
