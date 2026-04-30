@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Understanding DoS & DDoS Attacks | FirstSec</title>
+  <meta name="description" content="Clear explanation of DoS and DDoS attacks, how they work, and practical ways to protect your website from being taken offline.">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-D3HH5Q3XYY"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-D3HH5Q3XYY');
+  </script>
+  <link rel="stylesheet" href="../s.css">
+</head>
+
+<body>
+
+  <div id="header"></div>
+
+  <main class="blog-post">
+
+    <article>
+
+      <!-- Back -->
+      <a href="index.html" class="back-link">← Back</a>
+
+      <!-- Title -->
+      <h1>Understanding DoS and DDoS Attacks</h1>
+
+      <!-- Content -->
+      <p>
+        Denial-of-Service (DoS) and Distributed Denial-of-Service (DDoS) attacks are among the most common and disruptive cyber threats today. Their goal is simple: overwhelm a system, server, or network until it becomes unavailable to legitimate users. For businesses, this can mean downtime, lost revenue, and damaged reputation.
+      </p>
+
+      <h2>What is a DoS Attack?</h2>
+      <p>
+        A DoS (Denial-of-Service) attack occurs when a single source floods a target system with excessive traffic or requests. This overload prevents the system from responding to normal user activity. These attacks are typically launched from one machine, making them easier to detect and block compared to more advanced threats.
+      </p>
+
+      <p>
+        Common DoS techniques include overwhelming servers with requests (HTTP floods), exploiting software vulnerabilities, or consuming system resources such as memory and CPU.
+      </p>
+
+      <h2>What is a DDoS Attack?</h2>
+      <p>
+        A DDoS (Distributed Denial-of-Service) attack is a more powerful version of a DoS attack. Instead of coming from a single source, it originates from multiple systems—often thousands—spread across different locations. These systems are usually part of a botnet, a network of compromised devices controlled by an attacker.
+      </p>
+
+      <p>
+        Because the traffic comes from many sources, DDoS attacks are much harder to stop. Blocking one IP address doesn’t help when thousands more are sending requests simultaneously.
+      </p>
+
+      <h2>Key Differences</h2>
+      <p>
+        The main difference between DoS and DDoS attacks lies in scale and complexity. A DoS attack is simpler and comes from one source, while a DDoS attack is distributed, coordinated, and significantly more difficult to defend against.
+      </p>
+
+      <h2>Why These Attacks Matter</h2>
+      <p>
+        Even a short outage can have serious consequences. E-commerce platforms lose sales, service providers break user trust, and internal systems can be disrupted. In some cases, attackers use DDoS attacks as a distraction while carrying out more serious breaches in the background.
+      </p>
+
+      <h2>How to Protect Your Business</h2>
+      <p>
+        Protection starts with preparation. Use firewalls and intrusion detection systems to filter malicious traffic. Implement rate limiting to prevent abuse, and consider using a Content Delivery Network (CDN) or DDoS mitigation service to absorb large-scale attacks.
+      </p>
+
+      <p>
+        Regular monitoring is essential. Unusual spikes in traffic should be investigated immediately. Having an incident response plan ensures your team can act quickly if an attack occurs.
+      </p>
+
+      <p>
+        Final thoughts: DoS and DDoS attacks aren’t just technical issues—they’re business risks. Understanding how they work and taking proactive steps can make the difference between a minor disruption and a major outage.
+      </p>
+
+      <!-- Optional CTA -->
+      <hr>
+      <p>
+        Not sure if your business is exposed?
+        <a href="../index.html#check-your-security">Request a security assessment</a>.
+      </p>
+
+    </article>
+
+  </main>
+
+  <div id="footer"></div>
+
+  <script>
+    fetch("../header.html")
+      .then(res => res.text())
+      .then(data => document.getElementById("header").innerHTML = data);
+
+    fetch("../footer.html")
+      .then(res => res.text())
+      .then(data => document.getElementById("footer").innerHTML = data);
+  </script>
+
+</body>
+
+</html>
